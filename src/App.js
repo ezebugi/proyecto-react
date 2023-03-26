@@ -1,17 +1,17 @@
+import "./App.css";
+import { Navbar } from "./Navbar";
+import Home from "./Home";
+import { Footer } from "./Footer";
 
-import './App.css';
-
-import { Login } from "./Login"
 
 function App() {
   return (
     <div className="App">
-     <Login />
-     <h1>Esto es app.</h1>
-     <h3>Probando los cambios y el pull</h3>
+      <Navbar />
+      <Home />
+      <Footer />
     </div>
   );
 }
 
 export default App;
-
