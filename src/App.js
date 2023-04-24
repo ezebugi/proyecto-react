@@ -1,18 +1,27 @@
-import "./App.css";
-import CounterContainer from "./components/Counter/CounterContainer";
-
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import ItemListContainer from "./components/ItemList/ItemListContainer";
+import { ItemDetailContainer } from "./components/ItemDetail/ItemDetailContainer";
 import { Navbar } from "./components/Navbar/Navbar";
+import CartContainer from "./components/Cart/CartContainer";
+import Form from "./components/Form/Form";
 
 function App() {
-  let saludo = "Hola bienvenido a Game Over";
-
   return (
-    <div className="App">
-      <Navbar />
-      <ItemListContainer saludo={saludo} />
-      <CounterContainer />
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route element={<Navbar />}>
+          <Route path="/" element={<ItemListContainer />} />
+          <Route
+            path="/category/:categoryName"
+            element={<ItemListContainer />}
+          />
+          <Route path="/itemDetail/:id" element={<ItemDetailContainer />} />
+          <Route path="/cart" element={<CartContainer />} />
+          <Route path="/form" element={<Form />} />
+          <Route path="*" element={<h1>error</h1>} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
   );
 }
 

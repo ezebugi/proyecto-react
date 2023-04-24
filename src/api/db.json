@@ -1,0 +1,51 @@
+{
+  "products": {
+    "items": [
+      {
+        "id": 1,
+        "title": "The Legend of Zelda: Breath of the Wild",
+        "price": 60,
+        "stock": 7,
+        "description": "Explora un vasto mundo abierto y descubre los secretos de Hyrule.",
+        "category": "Aventura",
+        "img": "https://res.cloudinary.com/dfbl1tifi/image/upload/v1682368863/D_NQ_NP_2X_990879-MLA40862922238_022020-F_p0lgqx.webp"
+      },
+      {
+        "id": 2,
+        "title": "Super Mario Odyssey",
+        "price": 50,
+        "stock": 3,
+        "description": "Únete a Mario y a su nuevo amigo Cappy en una misión para rescatar a la princesa Peach.",
+        "category": "Plataformas",
+        "img": "https://http2.mlstatic.com/D_NQ_NP_2X_958303-MLA40864140097_022020-F.webp"
+      },
+      {
+        "id": 3,
+        "title": "Red Dead Redemption 2",
+        "price": 70,
+        "stock": 6,
+        "description": "Explora el salvaje oeste y vive una emocionante historia de venganza y supervivencia.",
+        "category": "Accion",
+        "img": "https://http2.mlstatic.com/D_NQ_NP_2X_667696-MLA46792682054_072021-F.webp"
+      },
+      {
+        "id": 4,
+        "title": "Fortnite",
+        "price": 0,
+        "stock": 4,
+        "description": "Únete a otros jugadores en línea y lucha por ser el último superviviente en la isla.",
+        "category": "Battle Royale",
+        "img": "https://http2.mlstatic.com/D_NQ_NP_2X_957307-MLA53826223279_022023-F.webp"
+      },
+      {
+        "id": 5,
+        "title": "The Last of Us Part II",
+        "price": 50,
+        "stock": 5,
+        "description": "Explora un mundo postapocalíptico y sigue la historia de Ellie en su búsqueda de venganza.",
+        "category": "Aventura",
+        "img": "https://res.cloudinary.com/dfbl1tifi/image/upload/v1682370728/D_NQ_NP_2X_809693-MLA43440454685_092020-F_refcsh.webp"
+      }
+    ]
+  }
+}

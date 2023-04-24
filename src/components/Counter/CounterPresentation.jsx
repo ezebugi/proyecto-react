@@ -1,23 +1,18 @@
-const CounterPresentation = ({
-  user,
-  reiniciar,
-  sumar,
-  restar,
-  counter,
-  sumar10,
-  login,
-}) => {
-  return (
-    <div>
-      {user.length > 0 ? <h2>Bienvenido {user}</h2> : <h2>Ingresa</h2>}
-      <button onClick={login}>Login</button>
-      <h1>Contador de juegos</h1>
-      <button onClick={restar}>Restar</button>
-      <button onClick={sumar}>Sumar</button>
-      <button onClick={sumar10}>Sumar 10</button>
-      <h3>{counter}</h3>
+import { Button } from "@mui/material";
 
-      <button onClick={reiniciar}>Reiniciar contador</button>
+const CounterPresentation = ({ sumar, restar, counter, onAdd }) => {
+  return (
+    <div style={{ marginBottom: "20px", display: "flex", gap: "30px" }}>
+      <Button variant="contained" color="success" onClick={sumar}>
+        Sumar
+      </Button>
+      <h2>{counter}</h2>
+      <Button variant="contained" color="success" onClick={restar}>
+        Restar
+      </Button>
+      <Button variant="outlined" color="error" onClick={() => onAdd(counter)}>
+        Agregar
+      </Button>
     </div>
   );
 };
