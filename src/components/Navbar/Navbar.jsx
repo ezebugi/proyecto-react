@@ -1,8 +1,33 @@
 import CartWidget from "../CartWidget/CartWidget";
 import styles from "./Navbar.module.css";
 import { Outlet, Link } from "react-router-dom";
+import { dataBase } from "../FirebaseConfig";
+import { getDocs, collection } from "firebase/firestore";
+import { useEffect, useState } from "react";
+
+
 
 export const Navbar = () => {
+  const [categories, setCategories] = useState([]);
+  console.log(categories);
+
+  useEffect(() => {
+    const categoriesCollection = collection(dataBase, "categories");
+    getDocs(categoriesCollection)
+      .then((res) => {
+        let categoriesResult = res.docs.map((category) => {
+          return {
+            ...category.data(),
+            id: category.id,
+          };
+        });
+        setCategories(categoriesResult);
+      })
+      .catch((err) => console.log(err));
+  }, []);
+
+
+
   return (
     <div>
       <div className={styles.containerNavbar}>
@@ -15,15 +40,13 @@ export const Navbar = () => {
           />
         </Link>
         <div className={styles.categories}>
-          <Link to="/">Todos</Link>
-          <Link to="/category/Accion">Accion</Link>
-          <Link to="/category/Aventura">Aventura</Link>
-          <Link to="/category/Plataformas">Plataformas</Link>
-          <Link to="/category/Battle Royale">Battle Royale</Link>
-          <Link to="/category/Simulación">Simulación</Link>
-          <Link to="/category/Shooter">Shooter</Link>
-          <Link to="/category/Lucha">Lucha</Link>
-          <Link to="/category/Deportes">Deportes</Link>
+          {categories.map((category) => {
+            return (
+              <Link key={category.id} to={category.path}>
+                {category.title}
+              </Link>
+            );
+          })}
         </div>
         <CartWidget className={styles.cartWidget} />
       </div>

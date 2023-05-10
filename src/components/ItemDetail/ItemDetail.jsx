@@ -3,7 +3,7 @@ import styles from "./ItemDetail.module.css";
 import { Link } from "react-router-dom";
 import { Button } from "@mui/material";
 import CounterContainer from "../Counter/CounterContainer";
-export const ItemDetail = ({ product, onAdd }) => {
+export const ItemDetail = ({ product, onAdd, cantidadTotal }) => {
   return (
     <div>
       <div className={styles.containerItemDetail}>
@@ -24,9 +24,12 @@ export const ItemDetail = ({ product, onAdd }) => {
           </h2>
         </div>
       </div>
-      <div style={{ display: "flex", justifyContent: "center" }}>
-        <CounterContainer stock={product.stock} onAdd={onAdd} />
-      </div>
+      
+      {
+        product.stock > 0 ? <div style={{ display: "flex", justifyContent: "center" }}>
+        <CounterContainer stock={product.stock} onAdd={onAdd} initial={cantidadTotal} />
+      </div> : <h2>Sin stock</h2>
+      }
       <div style={{ display: "flex", justifyContent: "center" }}>
         <Link to="/">
           <Button variant="contained" color="success">

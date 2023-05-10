@@ -1,6 +1,6 @@
 export const products = [
   {
-    id: 1,
+    
     title: "The Legend of Zelda: Breath of the Wild",
     price: 60,
     stock: 7,
@@ -10,7 +10,7 @@ export const products = [
     img: "https://res.cloudinary.com/dfbl1tifi/image/upload/v1682368863/D_NQ_NP_2X_990879-MLA40862922238_022020-F_p0lgqx.webp",
   },
   {
-    id: 2,
+    
     title: "Super Mario Odyssey",
     price: 50,
     stock: 3,
@@ -20,7 +20,7 @@ export const products = [
     img: "https://http2.mlstatic.com/D_NQ_NP_2X_958303-MLA40864140097_022020-F.webp",
   },
   {
-    id: 3,
+   
     title: "Red Dead Redemption 2",
     price: 70,
     stock: 6,
@@ -30,7 +30,7 @@ export const products = [
     img: "https://http2.mlstatic.com/D_NQ_NP_2X_667696-MLA46792682054_072021-F.webp",
   },
   {
-    id: 4,
+    
     title: "Fortnite",
     price: 0,
     stock: 4,
@@ -41,7 +41,7 @@ export const products = [
   },
 
   {
-    id: 5,
+   
     title: "The Last of Us Part II",
     price: 50,
     stock: 5,
@@ -51,7 +51,7 @@ export const products = [
     img: "https://res.cloudinary.com/dfbl1tifi/image/upload/v1682370728/D_NQ_NP_2X_809693-MLA43440454685_092020-F_refcsh.webp",
   },
   {
-    id: 6,
+    
     title: "God of War",
     price: 40,
     stock: 9,
@@ -61,7 +61,7 @@ export const products = [
     img: "https://res.cloudinary.com/dfbl1tifi/image/upload/v1682370760/D_NQ_NP_2X_990023-MLA50864327350_072022-F_cxhoa9.webp",
   },
   {
-    id: 7,
+    
     title: "Animal Crossing: New Horizons",
     price: 55,
     stock: 2,
@@ -71,7 +71,7 @@ export const products = [
     img: "https://res.cloudinary.com/dfbl1tifi/image/upload/v1682370788/D_NQ_NP_2X_650648-MLA43429177645_092020-F_tfyvjt.webp",
   },
   {
-    id: 8,
+    
     title: "Overwatch",
     price: 30,
     stock: 8,
@@ -81,7 +81,7 @@ export const products = [
     img: "https://res.cloudinary.com/dfbl1tifi/image/upload/v1682370822/D_NQ_NP_2X_833744-MLA44503991263_012021-F_njn59n.webp",
   },
   {
-    id: 9,
+    
     title: "Minecraft",
     price: 20,
     stock: 10,
@@ -91,7 +91,7 @@ export const products = [
     img: "https://res.cloudinary.com/dfbl1tifi/image/upload/v1682370849/D_NQ_NP_2X_744660-MLA45047382135_032021-F_vku4kt.webp",
   },
   {
-    id: 10,
+    
     title: "Super Smash Bros. Ultimate",
     price: 45,
     stock: 6,
@@ -101,7 +101,7 @@ export const products = [
     img: "https://res.cloudinary.com/dfbl1tifi/image/upload/v1682370874/D_NQ_NP_2X_805062-MLA40861843559_022020-F_htjbxb.webp",
   },
   {
-    id: 11,
+    
     title: "FIFA 23",
     price: 70,
     stock: 5,
@@ -111,7 +111,7 @@ export const products = [
     img: "https://res.cloudinary.com/dfbl1tifi/image/upload/v1682370899/D_NQ_NP_2X_901969-MLA51823450243_102022-F_jbgrcy.webp",
   },
   {
-    id: 12,
+    
     title: "PES 2023",
     price: 65,
     stock: 2,
@@ -121,7 +121,7 @@ export const products = [
     img: "https://res.cloudinary.com/dfbl1tifi/image/upload/v1682370919/D_NQ_NP_2X_690397-MLA53056759120_122022-F_xszcd7.webp",
   },
   {
-    id: 13,
+   
     title: "Call of Duty: Vanguard",
     price: 80,
     stock: 3,
@@ -131,7 +131,7 @@ export const products = [
     img: "https://res.cloudinary.com/dfbl1tifi/image/upload/v1682370967/D_NQ_NP_2X_665900-MLA52186742291_102022-F_bzyzji.webp",
   },
   {
-    id: 14,
+    
     title: "Battlefield 2042",
     price: 75,
     stock: 6,
@@ -141,7 +141,7 @@ export const products = [
     img: "https://res.cloudinary.com/dfbl1tifi/image/upload/v1682370989/D_NQ_NP_2X_759259-MLA40862922198_022020-F_vbtyx7.webp",
   },
   {
-    id: 15,
+    
     title: "NBA 2K23",
     price: 65,
     stock: 4,
@@ -150,4 +150,59 @@ export const products = [
     category: "Deportes",
     img: "https://res.cloudinary.com/dfbl1tifi/image/upload/v1682370943/D_NQ_NP_2X_896727-MLA51631928874_092022-F_chgemf.webp",
   },
+
+{
+  title: "Uncharted 4: A Thief's End",
+  price: 40,
+  stock: 5,
+  description:
+    "Sigue a Nathan Drake en su última aventura para descubrir la verdad detrás de un tesoro legendario.",
+  category: "Aventura",
+  img: "https://res.cloudinary.com/dfbl1tifi/image/upload/v1682370926/D_NQ_NP_2X_962212-MLA40046994060_122019-F_yoewqt.webp",
+},
+{
+  title: "Assassin's Creed Valhalla",
+  price: 60,
+  stock: 8,
+  description:
+    "Explora la Edad Media en Inglaterra y vive la historia de un guerrero vikingo que busca un nuevo hogar.",
+  category: "Aventura",
+  img: "https://res.cloudinary.com/dfbl1tifi/image/upload/v1682370953/D_NQ_NP_2X_846685-MLA45349652892_032021-F_w9tyqb.webp",
+},
+{
+  title: "Call of Duty: Modern Warfare",
+  price: 50,
+  stock: 6,
+  description:
+    "Únete a las fuerzas especiales en una guerra moderna contra el terrorismo global.",
+  category: "Shooter",
+  img: "https://res.cloudinary.com/dfbl1tifi/image/upload/v1682370982/D_NQ_NP_2X_946304-MLA40046608720_122019-F_g3qywe.webp",
+},
+{
+  title: "Genshin Impact",
+  price: 0,
+  stock: 4,
+  description:
+    "Explora un mundo de fantasía y descubre los secretos de los dioses y los elementos.",
+  category: "Aventura",
+  img: "https://res.cloudinary.com/dfbl1tifi/image/upload/v1682371012/D_NQ_NP_2X_851602-MLA46956137267_082021-F_wqtndt.webp",
+},
+{
+  title: "Mario Kart 8 Deluxe",
+  price: 55,
+  stock: 3,
+  description:
+    "Compite en carreras locas y divertidas con tus personajes favoritos de Nintendo.",
+  category: "Carreras",
+  img: "https://res.cloudinary.com/dfbl1tifi/image/upload/v1682371036/D_NQ_NP_2X_623772-MLA40909577762_022020-F_oalckf.webp",
+},
+{
+  title: "Rocket League",
+  price: 20,
+  stock: 7,
+  description:
+    "Combina carreras y fútbol en este juego emocionante donde los autos son los jugadores.",
+  category: "Deportes",
+  img: "https://res.cloudinary.com/dfbl1tifi/image/upload/v1682371063/D_NQ_NP_2X_852641-MLA44678861653_012021-F_hbevzj.webp",
+}
 ];

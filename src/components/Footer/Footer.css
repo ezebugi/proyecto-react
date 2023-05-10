@@ -1,0 +1,14 @@
+.mainFooter {
+    background-color: rgb(243, 163, 236);
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    margin-top: auto;
+  }
+
+  .letras{
+    color: #3c304b;
+  }
